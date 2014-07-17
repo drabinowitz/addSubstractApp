@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Adder Subtractor</title>
 	<link rel="stylesheet" href="main.css">
+	<script src="app.js"></script>
 </head>
 <body>
 	<header class="boundary"></header>
@@ -11,16 +12,20 @@
 	<div class="container">
 		<h1 class="title">Adder/Subtractor</h1>
 		<div class="inputFields">
+		<div class="xAndY">
 			<p>x=</p>
-			<input type="text">
+			<input type="text" id="xInput">
+		</div>
+		<div class="xAndY">
 			<p>y=</p>
-			<input type="text">
+			<input type="text" id="yInput">
+		</div>
 		</div>
 		<div class="addSubtract">
-			<input type="submit" value="+">
-			<input type="submit" value="-">
+			<input type="submit" value="+" id="addButton">
+			<input type="submit" value="-" id="subtractButton">
 		</div>
-		<p>X minus Y is Z</p>
+		<p id="result">X minus Y is Z</p>
 	</div>
 
 	<footer class="boundary"></footer>
